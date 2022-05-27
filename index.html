@@ -1,56 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us </title>
-    <link rel="stylesheet" href="style.css">
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsSXlbE9BPCyc0tt5jlSjGWBQAPpY09VUgTA&usqp=CAU" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="form">
-            <div class="contact-info">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            dolorum adipisci recusandae praesentium dicta!
+          </p>
 
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>A-39 A Shabhapur Delhi 110090</p>
             </div>
-            <div class="contact-form">
-                <span class="circle one"></span>
-                <span class="circle two"></span>
-                <form action="index.html">
-                    <h3 class="title">
-                        Contact us
-                    </h3>
-                    <div class="input-container">
-                        <input type="text" name="name" class="input">
-                        <label for="">Username</label>
-                        <span>Username</span>
-
-                    </div>
-                    <div class="input-container focus">
-                        <input type="email" name="email" class="input">
-                        <label for="">Email</label>
-                      <span>Email</span>
-
-                    </div>
-                    <div class="input-container">
-                        <input type="tel" name="phone"   class="input">
-                        <label class="phone_label" for="input">Phone</label>
-                        <span>Phone</span>
-
-                    </div>
-                    <div class="input-container textarea">
-                        <textarea name="message" class="input" ></textarea>
-                        <label for="">Message</label>
-                        <span>Message</span>
-                    </div>
-                    <input type="submit" value="send" class="btn">
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>Singhdepu566@gmail.com</p>
             </div>
-            </form>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>8882684762</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://github.com/trdxlucifer">
+               <i class='fa fa-github' ></i>
+              </a>
+              <a href="https://twitter.com/home" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/i_mdeependrajaiswan/?hl=en" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/deependra-singh-14a33720a/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
-    </div>
-<script src="app.js"></script>
-</body>
 
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>

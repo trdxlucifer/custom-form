@@ -7,6 +7,9 @@ function focusFun(){
 
 function blurFun(){
     let parent =this.parentNode;
+    if(history.value == ""){
+                            
+    }
     parent.classList.remove("focus");
 }
 
