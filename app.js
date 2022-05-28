@@ -19,6 +19,7 @@ inputs.forEach((input) => {
 
 
 function Mail() {
+
  
  Email.send({
       Host: "smtp.gmail.com",
@@ -32,5 +33,4 @@ function Mail() {
       message => alert("Message sent Succefully")
     );
   }
-
 
