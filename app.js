@@ -16,21 +16,7 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
-
-
-function Mail() {
-
  
- Email.send({
-      Host: "smtp.gmail.com",
-      Username: "snghdamon@gmail.com",
-      Password: "lybbbgyemcznombk",
-      To: 'snghdamon@gmail.com',
-      From: document.getElementById("mail").value,
-      Subject: "New Enquiry of Contact Form",
-      Body: body
-    }).then(
-      message => alert("Message sent Succefully")
-    );
-  }
-
+function sendEmail() {
+  alert("Mail sent successfully")
+}
