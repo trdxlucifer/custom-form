@@ -1,19 +1,23 @@
-const inputs= document.querySelectorAll(".input");
+const inputs = document.querySelectorAll(".input");
 
-function focusFun(){
-    let parent = this.parentNode;
-    parent.classList.add("focus");
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
 }
 
-function blurFun(){
-    let parent =this.parentNode;
-    if(history.value == ""){
-                            
-    }
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
     parent.classList.remove("focus");
+  }
 }
 
-inputs.forEach((input) =>{
-    input.addEventListener("focus", focusFun);
-    input.addEventListener("blur",blurFun);
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
 });
+
+
+function SendEmail() {
+    console.log("Hello how are u ")
+}
