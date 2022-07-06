@@ -1,4 +1,5 @@
 const inputs = document.querySelectorAll(".input");
+const input = document.getElementById("form");
 
 function focusFunc() {
   let parent = this.parentNode;
@@ -16,7 +17,19 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
- 
+
 function sendEmail() {
-  alert("Mail sent successfully")
+  console.log("done done")
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "trdxlucifer1@gmail.com",
+    Password : "BC28538FEFEBB669117D8696342C6EE8BDFC",
+    To : 'singhdepu566@gmail.com',
+    From : "deependrajaiswan@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body",
+    
+}).then(
+  message => alert("Message Sent Succefully")
+);
 }
